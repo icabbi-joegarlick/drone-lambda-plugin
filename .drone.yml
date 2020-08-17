@@ -15,4 +15,7 @@ pipeline:
     image: plugins/docker
     repo: omerxx/drone-lambda-plugin
     tags: latest
-    secrets: [ docker_username, docker_password, docker_email ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
