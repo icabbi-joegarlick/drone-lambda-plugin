@@ -13,7 +13,7 @@ pipeline:
 
   docker:
     image: plugins/docker
-    repo: omerxx/drone-lambda-plugin
+    repo: jcbjoe/drone-lambda-plugin
     tags: latest
     username:
       from_secret: docker_username
